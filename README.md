@@ -1,19 +1,19 @@
-# Low Power Mode for Claude Code 🔋
+# Low Power Mode for Claude Code
 
 Like your phone's Low Power Mode, but for Claude.
 
 When your **weekly Claude usage reaches 75%**, Claude asks:
 
-> ⚡ Weekly usage at 76%. Turn on Low Power Mode? **Yes / No**
+> Weekly usage at 76%. Turn on Low Power Mode? **Yes / No**
 
 Say yes and Claude starts saving tokens until your weekly limit resets.
 
 ## What it does
 
-- ✂️ **Shorter answers:** no intros, no summaries, no repeated code.
-- 📖 **Reads less:** greps for the exact lines instead of opening whole files.
-- 🧩 **Fewer extras:** avoids subagents and web searches. Turns off the learning/explanatory output style plugins (if you use them).
-- 🔁 **Turns itself off** when your weekly limit resets.
+- **Shorter answers:** no intros, no summaries, no repeated code.
+- **Reads less:** greps for the exact lines instead of opening whole files.
+- **Fewer extras:** avoids subagents and web searches. Turns off the learning/explanatory output style plugins (if you use them).
+- **Turns itself off** when your weekly limit resets.
 
 You can also turn it on or off any time. Just tell Claude "turn on Low Power Mode".
 
