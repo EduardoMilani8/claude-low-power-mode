@@ -41,6 +41,7 @@ case "$1" in
     echo "Low Power Mode: $mode (plugin changes apply on the next session)" ;;
   status)
     pct=$(cut -d' ' -f1 "$DIR/battery" 2>/dev/null)
-    echo "Low Power Mode: $mode | weekly usage: ${pct:-?}%" ;;
+    echo "Low Power Mode: $mode | weekly usage: ${pct:-?}%"
+    [ -n "$pct" ] || echo "No reading yet. If you use a custom status line, copy the 'sensor' block from $DIR/statusline.sh into it (see README)." ;;
   *) echo "usage: lowpower.sh on|off|status" >&2; exit 1 ;;
 esac
